@@ -15,6 +15,7 @@ Ini adalah halaman login di mana pengguna dapat masuk ke dalam sistem.
 ### 2. Dashboard Admin 🛠️
 
 Dashboard admin memberikan gambaran umum tentang berbagai aktivitas dan data dalam sistem.
+Di sini, admin dapat mengelola produk, termasuk menambah, mengedit, atau menghapus produk.
 
 ![Admin Dashboard](screenshot/admin.png)
 
@@ -28,19 +29,19 @@ Halaman utama yang menyambut pengguna setelah login, dengan berbagai informasi d
 
 ---
 
-### 4. Manajemen Produk 📦
+### 4. Produk 📦
 
-Di sini, admin dapat mengelola produk, termasuk menambah, mengedit, atau menghapus produk.
+Di sini, user dapat melihat produk, bisa melihat detail dan memasukkan ke keranjang.
 
-![Product Management](screenshot/product.png)
+![Product](screenshot/product.png)
 
 ---
 
 ### 5. Proses Pembayaran 💳
 
-Halaman ini menunjukkan bagaimana pengguna dapat melakukan pembayaran untuk produk yang mereka beli.
+Halaman ini menunjukkan proses pembayaran yang sudah terintegrasi dengan midtrans.
 
-![Payment Process](screenshot/payment.png)
+![Payment Process](screenshot/paymentmidtrans.png)
 
 ---
 
