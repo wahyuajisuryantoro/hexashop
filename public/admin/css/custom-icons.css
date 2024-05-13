@@ -1,0 +1,23 @@
+/* Custom Icon Styles */
+.custom-icons {
+    color: #fff;
+    transition: transform 0.3s ease, color 0.3s ease; 
+}
+
+.nav-link:hover .custom-icons {
+    color: #4B0082;
+    transform: scale(1.1);
+}
+
+.fa-desktop.custom-icons { color: #1abc9c; } 
+.fa-tags.custom-icons { color: #3498db; } 
+.fa-cart-plus.custom-icons { color: #e74c3c; } 
+.fa-credit-card.custom-icons { color: #f39c12; } 
+.fa-folder-open.custom-icons { color: #9b59b6; } 
+.fa-building.custom-icons { color: #34495e; }
+.fa-sign-out-alt.custom-icons { color: #e84393; }
+
+.nav-item.active .custom-icons {
+    transform: scale(1.2);
+    color: #2ecc71; 
+}

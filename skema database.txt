@@ -1,0 +1,52 @@
+1. Tabel Produk
+Tabel ini akan menyimpan informasi tentang produk yang dijual di HexaShop.
+
+products
+id (INT, primary key, auto-increment)
+name (VARCHAR)
+description (TEXT)
+price (DECIMAL)
+category_id (INT, foreign key ke categories.id)
+image_url (VARCHAR, URL ke gambar produk)
+created_at (TIMESTAMP)
+updated_at (TIMESTAMP)
+2. Tabel Kategori
+Tabel ini digunakan untuk mengkategorikan produk.
+
+categories
+id (INT, primary key, auto-increment)
+name (VARCHAR)
+description (TEXT, optional)
+created_at (TIMESTAMP)
+updated_at (TIMESTAMP)
+3. Tabel Pengguna
+Tabel ini menyimpan informasi pengguna yang mendaftar di HexaShop.
+
+users
+id (INT, primary key, auto-increment)
+name (VARCHAR)
+email (VARCHAR, unique)
+password (VARCHAR, untuk menyimpan hash password)
+created_at (TIMESTAMP)
+updated_at (TIMESTAMP)
+4. Tabel Order
+Tabel ini untuk menyimpan informasi pesanan dari pengguna.
+
+orders
+id (INT, primary key, auto-increment)
+user_id (INT, foreign key ke users.id)
+total_price (DECIMAL)
+status (VARCHAR, misal: 'pending', 'completed', 'cancelled')
+created_at (TIMESTAMP)
+updated_at (TIMESTAMP)
+5. Tabel Order Detail
+Tabel ini menyimpan detail dari setiap pesanan, seperti produk apa saja yang dipesan.
+
+order_details
+id (INT, primary key, auto-increment)
+order_id (INT, foreign key ke orders.id)
+product_id (INT, foreign key ke products.id)
+quantity (INT)
+price (DECIMAL, harga per unit saat itu)
+created_at (TIMESTAMP)
+updated_at (TIMESTAMP)
